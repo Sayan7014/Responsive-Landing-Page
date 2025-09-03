@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Explorer</title>
+  <link rel="stylesheet" href="travel.css" />
+</head>
+<body>
+  <!-- Navbar -->
+<nav>
+  <div class="logo">Travel❤U</div>
+  <ul>
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#destinations">Destinations</a></li>
+    <li><a href="#cta">Book</a></li>
+    <li><a href="#footer">Contact</a></li>
+  </ul>
+  <button class="login-btn" id="loginBtn">Login</button>
+</nav>
+
+<!-- Sliding Login Panel -->
+<div class="login-panel" id="loginPanel">
+  <div class="login-content">
+    <span class="close-btn" id="closeBtn">&times;</span>
+    <h2>Welcome Back</h2>
+    <form>
+      <input type="email" placeholder="Enter your email" required />
+      <input type="password" placeholder="Enter your password" required />
+      <button type="submit" class="submit-btn">Login</button>
+    </form>
+    <p class="register-text">
+      Don’t have an account? <a href="#">Sign Up / Register</a>
+    </p>
+  </div>
+</div>
+
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <h1>Explore the World with Us</h1>
+    <p>Your adventure starts here. Discover amazing destinations.</p>
+    <div class="search-box">
+      <input type="text" id="search" placeholder="Search destinations..." />
+      <button onclick="searchDestination()">Search</button>
+    </div>
+  </section>
+
+  <!-- Destinations -->
+  <section id="destinations">
+    <h2>Popular Destinations</h2>
+    <div class="destinations">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=800&q=80" alt="Paris" />
+        <div class="info"><h3>Paris</h3></div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Maldives" />
+        <div class="info"><h3>Maldives</h3></div>
+      </div>
+      <div class="card">
+        <img src="https://th.bing.com/th/id/R.50d39191b43bd96b03f9258c622a17fd?rik=UklS3qq9yTKvEw&riu=http%3a%2f%2fwallup.net%2fwp-content%2fuploads%2f2017%2f03%2f28%2f344582-architecture-building-cityscape-city-clouds-evening-USA-New_York_City-Empire_State_Building-skyscraper-sunset-Manhattan-long_exposure-water-window-cranes_machine-bridge.jpg&ehk=64QnvM5%2bl1KsArA8tdXROuSVq6HDNtqhfj1LIOJBHN0%3d&risl=&pid=ImgRaw&r=0" alt="New York" />
+        <div class="info"><h3>New York</h3></div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80" alt="Tokyo" />
+        <div class="info"><h3>Tokyo</h3></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta" id="cta">
+    <h2>Ready for Your Next Adventure?</h2>
+    <p>Book your dream vacation today and explore the beauty of the world.</p>
+    <button onclick="bookNow()">Book Now</button>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <p>© 2025 TravelX. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="travel.js"></script>
+</body>
+</html>
